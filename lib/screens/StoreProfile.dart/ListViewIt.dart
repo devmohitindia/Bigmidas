@@ -11,6 +11,39 @@ class _ListViewItState extends State<ListViewIt> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        Container(
+          margin: EdgeInsets.fromLTRB(10, 2, 10, 2),
+          color: Colors.grey[200],
+          child: Row(
+            children: [
+              Container(
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.fromLTRB(3, 5, 20, 5),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.red)
+                ),
+                child: Text("Search by Product Name...", style: TextStyle(fontSize: 12),),
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.fromLTRB(11, 5, 12, 5),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.red)
+                ),
+                child: Text("Sort by ", style: TextStyle(fontSize: 12),),
+              ),
+              Container(
+                margin: EdgeInsets.all(5),
+                padding: EdgeInsets.fromLTRB(11, 5, 12, 5),
+                decoration: BoxDecoration(
+                  border: Border.all(color: Colors.red)
+                ),
+                child: Text("Category", style: TextStyle(fontSize: 12),),
+              )
+              
+            ],
+          ),
+        ),
         StoreProductsPage(
           title: "Doctor\'s Choice Absorbent Cotton Wool l.P",
           subTitle: "\u20A8 225 / 400Gm'",

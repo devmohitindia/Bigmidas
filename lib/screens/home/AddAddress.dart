@@ -1,4 +1,5 @@
 import 'package:big_medas_app/screens/home/AddressDropDown.dart';
+import 'package:big_medas_app/screens/home/paymentPage.dart';
 import 'package:flutter/material.dart';
 
 class AddAddress extends StatefulWidget {
@@ -7,6 +8,7 @@ class AddAddress extends StatefulWidget {
 }
 
 class _AddAddressState extends State<AddAddress> {
+  var value="home";
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -24,14 +26,10 @@ class _AddAddressState extends State<AddAddress> {
           SizedBox(
             height: 10,
           ),
-          Image.asset("./assests/services/selectLocation.jpeg"),
-          SizedBox(
-            height: 10,
-          ),
           TextFormField(
             decoration: new InputDecoration(
-              hintText: 'First Name',
-              hintStyle: TextStyle(fontSize: 12),
+              hintText: 'Enter your Name',
+              hintStyle: TextStyle(fontSize: 18, color: Colors.black ),
             ),
           ),
           SizedBox(
@@ -39,8 +37,18 @@ class _AddAddressState extends State<AddAddress> {
           ),
           TextFormField(
             decoration: new InputDecoration(
-              hintText: 'Last Name',
-              hintStyle: TextStyle(fontSize: 12),
+              hintText: 'Enter Phone Number',
+              hintStyle: TextStyle(fontSize: 18, color: Colors.black),
+            ),
+            
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          TextFormField(
+            decoration: new InputDecoration(
+              hintText: 'House No / Street / Area',
+              hintStyle: TextStyle(fontSize: 18, color: Colors.black),
             ),
           ),
           SizedBox(
@@ -48,58 +56,52 @@ class _AddAddressState extends State<AddAddress> {
           ),
           TextFormField(
             decoration: new InputDecoration(
-              hintText: 'Address',
-              hintStyle: TextStyle(fontSize: 12),
+              hintText: 'Landmark',
+              hintStyle: TextStyle(fontSize: 18, color: Colors.black),
             ),
+          ),
+          SizedBox(
+            height: 10,
+          ),
+          Row(
+            children: [
+              Text("Address", style: TextStyle(fontSize: 18),),
+              SizedBox(width: 150,),
+              RaisedButton(onPressed: (){},color: Colors.red, child: Text("Map", style: TextStyle(fontWeight: FontWeight.w900, color: Colors.white),))
+            ],
           ),
           SizedBox(
             height: 10,
           ),
           TextFormField(
-            decoration: new InputDecoration(
-              hintText: 'City',
-              hintStyle: TextStyle(fontSize: 12),
-            ),
+            decoration: InputDecoration(border: OutlineInputBorder( borderSide: BorderSide(color: Colors.black)), hintText: "Enter Address", hintStyle: TextStyle(fontSize: 18, color: Colors.black)),
+            maxLines: 5,
+            keyboardType:TextInputType.multiline,
           ),
           SizedBox(
             height: 10,
           ),
-          TextFormField(
-            decoration: new InputDecoration(
-              hintText: 'Pincode',
-              hintStyle: TextStyle(fontSize: 12),
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            decoration: new InputDecoration(
-              hintText: 'Email',
-              hintStyle: TextStyle(fontSize: 12),
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            decoration: new InputDecoration(
-              hintText: 'Phone Number',
-              hintStyle: TextStyle(fontSize: 12),
-            ),
-          ),
-          SizedBox(
-            height: 10,
-          ),
-          AddressDropDown(),
-          SizedBox(
-            height: 10,
-          ),
-          TextFormField(
-            decoration: new InputDecoration(
-              hintText: 'State',
-              hintStyle: TextStyle(fontSize: 12),
-            ),
+          Row(
+            children: [
+                Radio(value: "home", groupValue: value, onChanged: (String evnt) { setState(() {
+                                  value=evnt;
+                                }); }),
+                Text("Home"),
+                SizedBox(
+                  width: 15,
+                ),
+                Radio(value: "work", groupValue: value, onChanged: (String evnt) { setState(() {
+                                  value=evnt;
+                                }); }),
+                Text("Work"),
+                SizedBox(
+                  width: 15,
+                ),
+                Radio(value: "others", groupValue: value, onChanged: (String evnt) { setState(() {
+                                  value=evnt;
+                                }); }),
+                Text("others"),
+            ],
           ),
           SizedBox(
             height: 20,
@@ -114,7 +116,7 @@ class _AddAddressState extends State<AddAddress> {
                   ),
                   borderRadius: BorderRadius.circular(8.0)),
               child: Text(
-                "Proceed",
+                "Add Address",
                 style: TextStyle(
                     fontSize: 25,
                     color: Color.fromRGBO(185, 58, 69, 1),

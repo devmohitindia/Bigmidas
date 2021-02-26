@@ -11,7 +11,14 @@ import 'package:big_medas_app/screens/WishList/ScafFlodVendorHairing.dart';
 import 'package:big_medas_app/screens/WishList/ScagFlodWishList.dart';
 import 'package:big_medas_app/screens/WishList/WishList.dart';
 import 'package:big_medas_app/screens/home/AllStores.dart';
+import 'package:big_medas_app/screens/home/ManageAddress.dart';
+import 'package:big_medas_app/screens/home/Privacy.dart';
+import 'package:big_medas_app/screens/home/Profile.dart';
+import 'package:big_medas_app/screens/home/Refund.dart';
 import 'package:big_medas_app/screens/home/ScafflodAllStores.dart';
+import 'package:big_medas_app/screens/home/ScaffoldAddAddress.dart';
+import 'package:big_medas_app/screens/home/Scaffoldprofile.dart';
+import 'package:big_medas_app/screens/home/TC.dart';
 import 'package:big_medas_app/screens/home/home.dart';
 import 'package:big_medas_app/screens/stores/StoreView.dart';
 import 'package:flutter/material.dart';
@@ -38,11 +45,16 @@ class _MyAppState extends State<MyApp> {
           '/serviceProfile': (context) => ServiceProfile(),
           '/wishList': (context) => ScafFlodwishList(),
           '/AddAddress': (context) => ScafFlodManageAddress(),
+          '/ManageAddress': (context) => ScaffoldAddAddress(),
           '/orderPage': (context) => ScafFlodOrders(),
           '/CarBooking': (context) => ScafFlodOfCarBooking(),
           '/VendorHairing': (context) => ScafFlodVendorHaring(),
           '/paymentPage': (context) => ScafFlodPaymentPage(),
           '/allstores': (context) => ScafflodAllStores(),
+          '/Profile': (context) => Scaffoldprofile(),
+          '/TC': (context) => TC(),
+          '/Privacy': (context) => Privacy(),
+          '/Refund': (context) => Refund(),
         },
         // theme: ThemeData(fontFamily: 'Open_sansregular'),
         debugShowCheckedModeBanner: false,

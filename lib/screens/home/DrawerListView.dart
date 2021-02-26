@@ -77,20 +77,25 @@ class _DrawerListViewState extends State<DrawerListView> {
             
           ),
           SizedBox(height: 25,),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children:[
-                Icon(Icons.person_outline),
-                 Text(
-              " Profile Setting",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-            )
-              ]
+          InkWell(
+            onTap: () => {Navigator.pushNamed(context, '/Profile')},
+            //  orderPage
+
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children:[
+                  Icon(Icons.person_outline), 
+                  Text(
+                " Profile Setting",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+              )
+                ]
+              ),
             ),
           ),
           InkWell(
-            onTap: () => {Navigator.pushNamed(context, '/AddAddress')},
+            onTap: () => {Navigator.pushNamed(context, '/ManageAddress')},
             //  orderPage
 
             child: Padding(
@@ -150,40 +155,55 @@ class _DrawerListViewState extends State<DrawerListView> {
               ]
               ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: [
-                Icon(Icons.assignment_outlined),
-                Text(
-              " T/C",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-            ),
-              ],
-            ), 
-          ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: [
-                Icon(Icons.policy_outlined),
-                Text(
-              " Privacy Policy",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-            )
-              ],
+          InkWell(
+            onTap: () => {Navigator.pushNamed(context, '/TC')},
+            //  orderPage
+
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children:[
+                  Icon(Icons.assignment_outlined), 
+                  Text(
+                " T/C",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+              )
+                ]
+              ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.all(8.0),
-            child: Row(
-              children: [
-                Icon(Icons.privacy_tip_outlined),
-                 Text(
-              " Refund Policy",
-              style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
-            )
-              ],
+         InkWell(
+            onTap: () => {Navigator.pushNamed(context, '/Privacy')},
+            //  orderPage
+
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children:[
+                  Icon(Icons.policy_outlined), 
+                  Text(
+                " Privacy Policy",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+              )
+                ]
+              ),
+            ),
+          ),
+          InkWell(
+            onTap: () => {Navigator.pushNamed(context, '/Refund')},
+            //  orderPage
+
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                children:[
+                  Icon(Icons.privacy_tip_outlined), 
+                  Text(
+                " Refund Policy",
+                style: TextStyle(fontSize: 18, fontWeight: FontWeight.w700),
+              )
+                ]
+              ),
             ),
           ),
         ],

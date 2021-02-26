@@ -18,11 +18,14 @@ class _ScafFlodDriverProfleState extends State<ScafFlodDriverProfle> {
             padding: EdgeInsets.all(8.0),
             child: Row(
               children: [
-                Image.asset(
+                Container(
+                  margin: EdgeInsets.fromLTRB(0, 0, 0, 15),
+                child: Image.asset(
                   "./assests/services/circular_image3.png",
                   fit: BoxFit.fill,
-                  height: 150,
+                  height: 120,
                   width: 120,
+                )
                 ),
                 SizedBox(
                   width: 10,
@@ -68,8 +71,8 @@ class _ScafFlodDriverProfleState extends State<ScafFlodDriverProfle> {
                           ),
                           Image.asset(
                             "./assests/services/shareIt.jpeg",
-                            width: 50,
-                            height: 50,
+                            width: 30,
+                            height: 30,
                           ),
                         ],
                       ),

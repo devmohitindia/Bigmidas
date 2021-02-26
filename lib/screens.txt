@@ -1,0 +1,110 @@
+
+
+17-02-2021  16:33             2,757 main.dart - redirects to Home.dart
+               
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens
+
+17-02-2021  13:53             4,467 CartPage.dart --> Redirects when you click on CArt icon in the APPBar
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\Bookings
+
+18-02-2021  03:00             8,956 CarBooking.dart --> Redirects to When user clicks on book now button in Vehicles section
+18-02-2021  03:05             4,720 VendorHiring.dart --> Redirects to When user clicks on book now button in Vehicles section
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\DriverScreen
+
+17-02-2021  19:42             2,398 DriverCard.dart -->
+17-02-2021  13:53             1,035 DriverDropDown.dart
+17-02-2021  13:53             4,724 DriverProfile.dart
+17-02-2021  13:53             7,316 DriveScreen.dart
+17-02-2021  19:32            12,038 ScafflodDriverProfile.dart
+17-02-2021  13:53               306 ScafFlodDriverScreen.dart
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\home
+
+17-02-2021  13:53             3,448 AddAddress.dart
+17-02-2021  13:53             1,009 AddressDropDown.dart
+17-02-2021  16:26             9,544 AllStores.dart
+17-02-2021  13:53               960 AppDrawer.dart
+17-02-2021  17:52               981 AppDropDown.dart
+18-02-2021  04:03             5,628 DrawerListView.dart --> Profileview
+17-02-2021  13:53             5,129 home.dart
+17-02-2021  13:53               611 homeGrid.dart
+17-02-2021  16:02             8,231 HomePage.dart --> Storeview
+17-02-2021  13:53             4,324 paymentPage.dart
+17-02-2021  13:53             1,332 RoundedPic.dart
+18-02-2021  02:47             1,637 RoundedVechicle.dart
+17-02-2021  16:38             4,554 ScafflodAllStores.dart
+17-02-2021  13:53             4,503 SearchService.dart
+17-02-2021  13:53             1,233 SearchServiceCard.dart --> Serviceview
+18-02-2021  02:44             3,486 servicesPage.dart --> Vehicleview
+17-02-2021  13:53               296 ShowHomePage.dart
+17-02-2021  13:53               291 ShowProfile.dart
+17-02-2021  13:53             1,339 storeCard.dart
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\OrderHistory
+
+17-02-2021  13:53               516 ListOfHistory.dart
+17-02-2021  13:53               559 ListOfServiceHistory.dart
+17-02-2021  13:53               553 ListOfVichleHistory.dart
+17-02-2021  13:53             4,883 OrderHistory.dart
+17-02-2021  13:53             3,248 serviceHistory.dart
+17-02-2021  13:53             1,380 StoreHistory.dart
+17-02-2021  13:53             2,570 VichleHistory.dart
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\ScafFlodOfWdigets
+
+17-02-2021  13:53             4,157 AddAddress.dart
+17-02-2021  13:53             4,357 ScafFlodPaymentPage.dart
+17-02-2021  13:53             4,453 ScafFoldMyOrders.dart
+17-02-2021  13:53             4,481 ScafFolfOFCarBooking.dart
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\ServcieProvider
+
+17-02-2021  19:30            12,300 ScafflodServiceProfile.dart
+17-02-2021  13:53             4,300 ServiceProfile.dart
+17-02-2021  19:41             2,630 ServiceProviderCard.dart
+17-02-2021  13:53             6,143 ServiceProviderList.dart
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\StoreProfile.dart
+
+17-02-2021  13:53             1,653 ContactInfo.dart
+18-02-2021  02:52             1,694 ListViewIt.dart
+17-02-2021  13:53             2,470 Reveiwcard.dart
+18-02-2021  02:54             2,057 ReviewList.dart
+17-02-2021  14:40             7,762 ScafflodStoreView.dart
+18-02-2021  02:50             2,505 StoreProductsPage.dart
+17-02-2021  13:53             5,454 StoreProfile.dart
+               
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\stores
+
+17-02-2021  13:53               463 ListOfStore.dart
+18-02-2021  01:57             3,139 StoreCard.dart
+17-02-2021  13:53             5,768 StoreView.dart
+
+
+ Directory of C:\Users\GEETA SRAVANI\Downloads\BigMidas-home_page\BigMidas\lib\screens\WishList
+
+17-02-2021  13:53               567 ListOfDriverWishList.dart
+17-02-2021  13:53               551 ListOfStoreIwishList.dart
+17-02-2021  13:53             4,424 ScafFlodVendorHairing.dart
+17-02-2021  13:53             4,474 ScagFlodWishList.dart
+17-02-2021  13:53             4,805 WishList.dart --> 
+
+
+StoreView(HomePage.dart) -> view all(ScaffoldAllStores-->AllStores.dart), click on any store(StoreView.dart->ListofStores.dart->StoreCard.dart) -> 
+VehicleView
+Sevicesview
+Profileview
+
+
+
